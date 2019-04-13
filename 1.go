@@ -66,7 +66,18 @@ func main(){
       {9,10,11,12},//注意这里有逗号
       }
 
-      fmt.Printf("%v",arr_1[2][2])
+      fmt.Printf("\n\n%x\n",&arr_1[2][2])
+
+     // var i2 int
+      var ptr [3]*int
+      var i uint8
+      for i=0;i<3;i++{
+         //ptr[i]=&a[i]
+      }
+
+      for i=0;i<3;i++{
+         fmt.Printf("a[%d]=%d\n",i,*ptr[i])
+      }
 
 }
 func max(num1 int,num2 int) int {
